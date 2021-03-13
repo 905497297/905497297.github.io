@@ -164,9 +164,7 @@
         <nav class="sidebar">
             <ul class="posts control">
     
-    <li><a class="no-break btn" href='/posts/the-standard-lorem-ipsum-passage-used-since-the-1500s/'><i class="icon icon-post"></i>The standard Lorem Ipsum passage, used since the 1500s</a></li>
-    
-    <li><a class="no-break btn" href='/posts/hello-world/'><i class="icon icon-post"></i>Hello World</a></li>
+    <li><a class="no-break btn" href='/post/test/'><i class="icon icon-post"></i>Test</a></li>
     
 </ul>
 
@@ -205,32 +203,97 @@
     </div>
     <div class="content">
         
-        <h1 id="the-standard-lorem-ipsum-passage-used-since-the-1500s">The standard Lorem Ipsum passage, used since the 1500s</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat lacinia tellus, in blandit ligula faucibus eu. Nulla efficitur mauris mauris, vel aliquet quam tincidunt et. Aenean tincidunt, magna et faucibus pulvinar, nisl sapien molestie felis, non semper ligula nulla quis ante. Donec ut placerat lorem, id luctus dui. Proin semper eros eu rutrum egestas. Nullam at sem at turpis feugiat dapibus a et ex. Praesent et quam ut orci vulputate lobortis. Etiam at tincidunt augue. Etiam tincidunt, eros in maximus tempor, leo enim rutrum odio, in sollicitudin lacus ligula eget turpis. Donec in velit nec est sagittis rhoncus quis id risus.</p>
+        <h1 id="使用hugogithub-page搭建个人网站">使用hugo+GitHub Page搭建个人网站</h1>
+<h2 id="一hugo安装及配置">一、hugo安装及配置</h2>
+<ol>
+<li>
+<p>在hugo的官方<a href="https://github.com/gohugoio/hugo/releases">下载地址</a>下载对应的操作系统版本安装文件，以windows64位操作系统为例，下载对应的hugo_0.81.0_Windows-64bit.zip。</p>
+</li>
+<li>
+<p>下载完成后，解压得到以下文件。</p>
+<p><img src="C:%5CUsers%5C%E5%BF%83%E6%80%A1%5CDesktop%5C%E5%9B%BE%E7%89%87%5C1.jpg" alt=""></p>
+</li>
+<li>
+<p>配置环境变量。</p>
+<ol>
+<li>
+<p>如步骤2所示，hugo.exe当前路径为F:\hugo\bin。</p>
+</li>
+<li>
+<p>右键点击此电脑，选择”属性“，打开控制面板后选择”高级系统设置“。</p>
+<p><img src="C:%5CUsers%5C%E5%BF%83%E6%80%A1%5CDesktop%5C%E5%9B%BE%E7%89%87%5C2.jpg" alt=""></p>
+</li>
+<li>
+<p>选择环境变量，配置系统变量path。</p>
+<p><img src="C:%5CUsers%5C%E5%BF%83%E6%80%A1%5CDesktop%5C%E5%9B%BE%E7%89%87%5C3.jpg" alt=""></p>
+</li>
+<li>
+<p>填入hugo.exe所在的路径，如图，当前安装路径为F:\hugo\bin。配置完成后点击“确定”。</p>
+<p><img src="C:%5CUsers%5C%E5%BF%83%E6%80%A1%5CDesktop%5C%E5%9B%BE%E7%89%87%5C4.jpg" alt=""></p>
+</li>
+</ol>
+</li>
+<li>
+<p>打开命令行，执行以下命令查看是否安装成功。</p>
+<p><code>hugo version</code></p>
+<p>hugo v0.81.0-59D15C97 windows/amd64 BuildDate=2021-02-19T17:07:12Z VendorInfo=gohugoio 显示该条即表示安装成功。</p>
+</li>
+<li>
+<p>进入F:\hugo下，打开命令窗口，执行如下命令。</p>
+<p><code>hugo new site文件名称（如blog）</code></p>
+<p>执行后，在hugo目录下会生成一个blog文件夹</p>
+</li>
+<li>
+<p>进入blog目录下，执行以下命令。</p>
+<p><code>hugo new post/test.md</code></p>
+<p>执行后，在content/post目录下会生成test.md文件，这个文件就是网页的主要内容，需要用markdown编辑工具，如Typora来编辑内容。同时需要将文件头部的draft改为false，这样部署了才能看到文章。</p>
+</li>
+<li>
+<p>进入blog下的themes目录。</p>
+<p><code>cd themes</code></p>
+</li>
+<li>
+<p>执行以下命令下载主题。</p>
+<p><code>git clone https://github.com/EmielH/tale-hugo.git</code></p>
+<p>（可在官网选择想要的主题下载）</p>
+</li>
+<li>
+<p>到blog目录下打开<code>config.toml</code>配置指定主题。如theme = &ldquo;tale-hugo&rdquo; 。配置完成后执行如下命令：</p>
+<p><code>hugo server</code></p>
+<p>执行后显示如下：</p>
+<p><img src="C:%5CUsers%5C%E5%BF%83%E6%80%A1%5CDesktop%5C%E5%9B%BE%E7%89%87%5C5.jpg" alt=""></p>
+<p>可访问：http://localhost:1313/ 查看效果。</p>
+</li>
+</ol>
+<h2 id="二github-page配置">二、Github Page配置</h2>
+<ol>
+<li>使用自己的账号登录Github，登录后，点击右上角，出现下拉菜单，点击 Your repositories 进入页面。</li>
+<li>点击 New，新建。</li>
+<li>进入 Creat a new repository 页面，需要将yourname换成自己GitHub的用户名，即图中owner显示的用户名。最后点击create repository即创见完毕。</li>
+<li>在GitHub Pages官网https://pages.github.com/下载GitHub客户端，安装后并登录。</li>
+<li>在客户端clone刚创建的仓库到本地。</li>
+</ol>
+<p>三/Hugo关联刚创建的仓库</p>
 <ul>
-<li>Vivamus nec est mollis, tincidunt ante id, tincidunt odio.</li>
-<li>Nam facilisis tellus bibendum nulla dignissim fringilla.</li>
-<li>Fusce accumsan lectus ac metus commodo pellentesque.</li>
-<li>Nunc non lectus eget turpis tempor accumsan.</li>
+<li>
+<p>在hugo站点目录config.toml中baseURL要换成自己建立的仓库，如baseURL =”https://905497297.github.io/“</p>
+</li>
+<li>
+<p>进入站点根目录下，执行:</p>
+<p>$ <strong><code>hugo</code></strong></p>
+<p>执行后，站点根目录下会生成一个 <code>public</code> 文件夹，该文件下的内容即Hugo生成的整个静态网站。</p>
+</li>
 </ul>
-<p>orci vulputate lobortis.</p>
+<p>四/将网站push至GitHub</p>
 <ul>
-<li>Quisque sollicitudin dui in ligula luctus, eu cursus neque elementum.</li>
-<li>Morbi malesuada eros pellentesque diam pulvinar, eget interdum turpis commodo.</li>
-<li>Etiam finibus elit non turpis convallis aliquet.</li>
-<li>Proin posuere nibh vel leo gravida, sit amet congue dui dictum.</li>
-<li>Maecenas auctor felis sit amet volutpat ornare.</li>
-<li>Sed pharetra lacus sed dictum tincidunt.</li>
-<li>Nullam bibendum diam a nulla ornare tempor.</li>
-<li>Maecenas dapibus nulla sit amet sem facilisis, et posuere nibh congue.</li>
-<li>Aenean auctor lectus ac ligula pellentesque, nec consequat erat aliquam.</li>
-<li>Donec interdum velit vitae faucibus consectetur.</li>
+<li>打开GitHub本地文件夹</li>
+<li>放入自己的网站文件</li>
+<li>回到客户端</li>
+<li>push上去</li>
+<li>上传完后回到网页版，发现已经上传了相关的文件</li>
+<li>在setting里找到博客的链接地址</li>
+<li>该链接即为网站的地址：</li>
 </ul>
-<p>Vivamus eget ornare nulla, congue volutpat neque. Donec ornare tellus ut felis mollis vestibulum. Integer felis purus, semper et odio at, fermentum aliquam orci. Donec vestibulum lectus non cursus bibendum. Integer neque eros, viverra nec cursus in, suscipit sodales sapien. Suspendisse nec bibendum ex. Nulla in ex tincidunt, sagittis nibh tempus, tincidunt arcu. Nunc tincidunt tortor quis urna porta, sit amet mollis ipsum venenatis. Nulla feugiat nisi et risus pretium luctus. Vestibulum ac nunc eget nisi sagittis condimentum. Quisque sed mauris in lacus semper pharetra luctus sit amet lectus. Aliquam condimentum leo justo, et efficitur ipsum aliquam at. Aenean non blandit purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent scelerisque dui eu velit semper maximus. Pellentesque ultrices, enim a finibus faucibus, est felis vehicula mi, facilisis consectetur dolor mi non dui.</p>
-<p>Donec tincidunt sem et sapien placerat, sit amet gravida tellus egestas. Suspendisse interdum nulla nec sodales euismod. Sed vel elit ut elit laoreet commodo vitae sit amet augue. Vestibulum ligula tellus, bibendum vel faucibus eu, porttitor convallis ante. Suspendisse ac sem quis nisl feugiat faucibus sit amet et lorem. Morbi et quam sollicitudin, aliquet ante ut, commodo odio. Duis euismod nisl nec quam venenatis, eu sollicitudin arcu tempus. Suspendisse congue odio nisi, placerat fermentum tortor cursus at. In imperdiet erat augue, in congue dui volutpat a. Donec molestie condimentum arcu quis condimentum. Suspendisse potenti.</p>
-<p>Aenean commodo sem nec libero luctus dictum. Sed a sagittis augue. Vestibulum ut finibus purus. Nullam vitae molestie turpis. Ut enim purus, laoreet non justo in, porttitor pulvinar orci. Pellentesque vitae urna blandit, mattis mi in, tempor risus. Integer venenatis maximus dui ac pellentesque.</p>
-<p>Sed venenatis non purus et condimentum. Morbi iaculis ac felis et blandit. Pellentesque vitae efficitur tellus. Ut sollicitudin vitae nulla eu luctus. Pellentesque condimentum nisl id blandit feugiat. Aliquam gravida dolor facilisis consectetur faucibus. Etiam ullamcorper libero id dictum tristique. Integer aliquam mi at lectus feugiat, non rhoncus erat imperdiet. Nam lobortis mauris nec nibh pulvinar, at facilisis mauris vehicula.</p>
-<p><em>Generated of Lorem Ipsum</em></p>
 
         
     </div>
@@ -305,7 +368,7 @@
 
     <ul class="control status clearfix">
         <li><a href="#" class="btn">Posts:
-                3</a>
+                2</a>
         </li>
         <li><a href="#" class="btn">Pages:
                 0</a></li>
