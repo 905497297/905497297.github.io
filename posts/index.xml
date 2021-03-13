@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Edidor Demo</title>
-    <link>http://905497297.github.io/</link>
-    <description>Recent content on Edidor Demo</description>
+    <title>Posts on Edidor Demo</title>
+    <link>http://905497297.github.io/posts/</link>
+    <description>Recent content in Posts on Edidor Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Mar 2021 21:08:50 +0800</lastBuildDate><atom:link href="http://905497297.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>http://905497297.github.io/post/test/</link>
-      <pubDate>Sat, 13 Mar 2021 21:08:50 +0800</pubDate>
-      
-      <guid>http://905497297.github.io/post/test/</guid>
-      <description>使用hugo+GitHub Page搭建个人网站 一/软件安装准备 hugo— GitHub客户端—网页代码托管 Typora— 一、hugo安装及配置</description>
-    </item>
-    
+    <lastBuildDate>Mon, 06 May 2019 23:26:23 +0800</lastBuildDate><atom:link href="http://905497297.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The standard Lorem Ipsum passage, used since the 1500s</title>
       <link>http://905497297.github.io/posts/the-standard-lorem-ipsum-passage-used-since-the-1500s/</link>
