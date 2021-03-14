@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Hugo 0.81.0" />
+    
+    <link rel="canonical" href="http://905497297.github.io/post/test/" />
+    <meta name="description" content="A hugo site using Edidor. &lt;br/&gt;&lt;br/&gt; Ctrl&#43;B toggle sidebar. ">
+    
+
+    <title>Test &middot; Edidor Demo</title>
+
+    <link rel="shortcut icon" href="http://905497297.github.io/images/favicon.ico" />
+
+    <link rel="stylesheet" href="http://905497297.github.io/css/main.css" />
+    
+        
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-light.min.css">
+        
+    
+    
+    
+</head>
+
+
+<body class="loading light-mode">
+    
+<div class="top">
+    <img class="logo" src="http://905497297.github.io/images/logo.svg" alt="logo" />
+</div>
+<div class="bottom">
+    <img class="logo" src="http://905497297.github.io/images/logo.svg" alt="logo" />
+</div>
+
+    <header class="header">
+    <ul class="menu clearfix control">
+        
+<li class="logo-container logo-light">
+    <a href="http://905497297.github.io/" class="btn logo-link">
+        <img class="logo" src="http://905497297.github.io/images/logo_light.svg" alt="logo" />
+    </a>
+</li>
+
+
+<li class="logo-container logo-default">
+    <a href="http://905497297.github.io/" class="btn logo-link">
+        <img class="logo" src="http://905497297.github.io/images/logo.svg" alt="logo" />
+    </a>
+</li>
+
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                Article
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="/posts"
+                    
+                        class="btn "
+                    >Posts</a>
+                </li>
+                
+                <li class="">
+                    <a href="/tags"
+                    
+                        class="btn "
+                    >Tags</a>
+                </li>
+                
+                <li class="">
+                    <a href="/categories"
+                    
+                        class="btn "
+                    >Categories</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                View
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="#"
+                    
+                        class="btn toggle-sidebar"
+                    >Toggle Sidebar</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li  id="theme-switcher" 
+            class="">
+            <a class="btn" id="theme-switcher-button">
+                Theme
+            </a>
+            <ul class="sub-menu control">
+                
+                <li class="">
+                    <a href="#"
+                    
+                        
+                        data-theme="light" class="btn"
+                        
+                    >Light</a>
+                </li>
+                
+                <li class="">
+                    <a href="#"
+                    
+                        
+                        data-theme="dark" class="btn"
+                        
+                    >Dark</a>
+                </li>
+                
+                <li class="">
+                    <a href="#"
+                    
+                        
+                        data-theme="wild" class="btn"
+                        
+                    >Wild</a>
+                </li>
+                
+                <li class="">
+                    <a href="#"
+                    
+                        
+                        class="export-wild btn"
+                        
+                    >Export Wild Style</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+    </ul>
+</header>
+
+    <div class="middle">
+        <nav class="sidebar">
+            <ul class="posts control">
+    
+    <li><a class="no-break btn" href='/posts/the-standard-lorem-ipsum-passage-used-since-the-1500s/'><i class="icon icon-post"></i>The standard Lorem Ipsum passage, used since the 1500s</a></li>
+    
+    <li><a class="no-break btn" href='/posts/hello-world/'><i class="icon icon-post"></i>Hello World</a></li>
+    
+</ul>
+
+        </nav>
+        <main class="main">
+            <article class="article">
+    <h2 class="title"><a href='/post/test/' class="btn">Test</a></h2>
+    <div class="article-meta clearfix">
+        <ul class="dates clearfix left control">
+            <li><i class="icon icon-date"></i></li>
+            <li class="publish-date">
+                <time datetime="2021.03.13">2021.03.13</time>
+            </li>
+        </ul>
+        
+        
+    </div>
+    <div class="content">
+        
+        <h1 id="使用hugogithub-page搭建个人网站">使用hugo+GitHub Page搭建个人网站</h1>
+<p>一/软件安装准备</p>
+<ol>
+<li>hugo—</li>
+<li>GitHub客户端—网页代码托管</li>
+<li>Typora—</li>
+</ol>
+<h2 id="一hugo安装及配置">一、hugo安装及配置</h2>
+<ol>
+<li>
+<p>在hugo的官方<a href="https://github.com/gohugoio/hugo/releases">下载地址</a>下载对应的操作系统版本安装文件，以windows64位操作系统为例，下载对应的hugo_0.81.0_Windows-64bit.zip。</p>
+</li>
+<li>
+<p>下载完成后，解压得到以下文件。</p>
+<p><img src="C:%5CUsers%5C%E5%BF%83%E6%80%A1%5CDesktop%5C%E5%9B%BE%E7%89%87%5C1.jpg" alt=""></p>
+</li>
+<li>
+<p>配置环境变量。</p>
+<ol>
+<li>
+<p>如步骤2所示，hugo.exe当前路径为F:\hugo\bin。</p>
+</li>
+<li>
+<p>右键点击此电脑，选择”属性“，打开控制面板后选择”高级系统设置“。</p>
+<p><img src="C:%5CUsers%5C%E5%BF%83%E6%80%A1%5CDesktop%5C%E5%9B%BE%E7%89%87%5C2.jpg" alt=""></p>
+</li>
+<li>
+<p>选择环境变量，配置系统变量path。</p>
+<p><img src="C:%5CUsers%5C%E5%BF%83%E6%80%A1%5CDesktop%5C%E5%9B%BE%E7%89%87%5C3.jpg" alt=""></p>
+</li>
+<li>
+<p>填入hugo.exe所在的路径，如图，当前安装路径为F:\hugo\bin。配置完成后点击“确定”。</p>
+<p><img src="C:%5CUsers%5C%E5%BF%83%E6%80%A1%5CDesktop%5C%E5%9B%BE%E7%89%87%5C4.jpg" alt=""></p>
+</li>
+</ol>
+</li>
+<li>
+<p>打开命令行，执行以下命令查看是否安装成功。</p>
+<p><code>hugo version</code></p>
+<p>hugo v0.81.0-59D15C97 windows/amd64 BuildDate=2021-02-19T17:07:12Z VendorInfo=gohugoio 显示该条即表示安装成功。</p>
+</li>
+<li>
+<p>进入F:\hugo下，打开命令窗口，执行如下命令。</p>
+<p><code>hugo new site文件名称（如blog）</code></p>
+<p>执行后，在hugo目录下会生成一个blog文件夹</p>
+</li>
+<li>
+<p>进入blog目录下，执行以下命令。</p>
+<p><code>hugo new post/test.md</code></p>
+<p>执行后，在content/post目录下会生成test.md文件，这个文件就是网页的主要内容，需要用markdown编辑工具，如Typora来编辑内容。同时需要将文件头部的draft改为false，这样部署了才能看到文章。</p>
+</li>
+<li>
+<p>进入blog下的themes目录。</p>
+<p><code>cd themes</code></p>
+</li>
+<li>
+<p>执行以下命令下载主题。</p>
+<p><code>git clone https://github.com/EmielH/tale-hugo.git</code></p>
+<p>（可在官网选择想要的主题下载）</p>
+</li>
+<li>
+<p>到blog目录下打开<code>config.toml</code>配置指定主题。如theme = &ldquo;tale-hugo&rdquo; 。配置完成后执行如下命令：</p>
+<p><code>hugo server</code></p>
+<p>执行后显示如下：</p>
+<p><img src="C:%5CUsers%5C%E5%BF%83%E6%80%A1%5CDesktop%5C%E5%9B%BE%E7%89%87%5C5.jpg" alt=""></p>
+<p>可访问：http://localhost:1313/ 查看效果。</p>
+</li>
+</ol>
+<h2 id="二github-page配置">二、Github Page配置</h2>
+<ol>
+<li>使用自己的账号登录Github，登录后，点击右上角，出现下拉菜单，点击 Your repositories 进入页面。</li>
+<li>点击 New，新建。</li>
+<li>进入 Creat a new repository 页面，需要将yourname换成自己GitHub的用户名，即图中owner显示的用户名。最后点击create repository即创见完毕。</li>
+<li>在GitHub Pages官网https://pages.github.com/下载GitHub客户端，安装后并登录。</li>
+<li>在客户端clone刚创建的仓库到本地。</li>
+</ol>
+<p>三/Hugo关联刚创建的仓库</p>
+<ul>
+<li>
+<p>在hugo站点目录config.toml中baseURL要换成自己建立的仓库，如baseURL =”https://905497297.github.io/“</p>
+</li>
+<li>
+<p>进入站点根目录下，执行:</p>
+<p>$ <strong><code>hugo</code></strong></p>
+<p>执行后，站点根目录下会生成一个 <code>public</code> 文件夹，该文件下的内容即Hugo生成的整个静态网站。</p>
+</li>
+</ul>
+<p>四/将网站push至GitHub</p>
+<ul>
+<li>打开GitHub本地文件夹</li>
+<li>放入自己的网站文件</li>
+<li>回到客户端</li>
+<li>push上去</li>
+<li>上传完后回到网页版，发现已经上传了相关的文件</li>
+<li>在setting里找到博客的链接地址</li>
+<li>该链接即为网站的地址：</li>
+</ul>
+
+        
+    </div>
+
+</article>
+<section class="comment">
+    <p class="local-info">
+        Comment is disabled to avoid unwanted discussions from 'localhost:1313' on your Disqus
+        account...
+    </p>
+    <div id="disqus_thread"></div>
+</section>
+<script type="text/javascript">
+
+    (function () {
+        if (window.location.hostname == "localhost") {
+            return
+        }
+        document.querySelector('.local-info').classList.add('hide')
+
+        let dsq = document.createElement('script')
+        dsq.type = 'text/javascript'
+        dsq.async = true
+        let disqus_shortname = 'your disqus short name'
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
+    })()
+</script>
+
+
+        </main>
+    </div>
+    <footer class="footer clearfix">
+    <ul class="control social clearfix">
+        <li><a class="author btn" href="#">Ziox</a></li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon behance"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon email"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon facebook"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon github"></i></a>
+        </li>
+        
+        
+        
+        <li>
+            <a class="icon-link btn" href="%20"><i class="icon twitter"></i></a>
+        </li>
+        
+        
+        <li>
+            <a class="icon-link btn" href="http://905497297.github.io/index.xml" type="application/rss+xml" title="rss">
+                <i class="rss icon"></i></a>
+        </li>
+    </ul>
+
+    <ul class="control status clearfix">
+        <li><a href="#" class="btn">Posts:
+                3</a>
+        </li>
+        <li><a href="#" class="btn">Pages:
+                0</a></li>
+        <li><a href="#" class="btn">en</a></li>
+        <li><a href="https://gohugo.io" class="btn">Hugo, 0.81.0</a></li>
+        <li><a href="https://github.com/jacobsun/edidor" class="btn">Theme: Edidor</a></li>
+        <li>
+            
+                <a href="#" class="btn">Last build: <time
+                    datetime="2021-02-19T17:07:12Z">2021-02-19T17:07:12Z</time>
+                </a>
+            
+        </li>
+    </ul>
+</footer>
+<div class="dialog">
+    <div class="wrapper">
+        <div class="clearfix"><button class="btn close-dialog">X</button></div>
+        <header>
+            <h1 class="title">Theme Name</h1>
+        </header>
+        <main>
+            <div class="clearfix">
+                <label for="theme-name">
+                    <p>Only English Character, space, hyphen are allowed!</p>
+                    <p>Valid name examples: "custom", "fantastic theme", "my-theme"</p>
+                    <p>Invalid name examles: "我的主题", ":)", "123"</p>
+                </label>
+                <input type="text" name="theme-name" id="theme-name">
+            </div>
+            <div class="clearfix">
+                <button class="btn export">Export</button>
+            </div>
+
+        </main>
+        <footer></footer>
+    </div>
+</div>
+
+    <script src="http://905497297.github.io/js/main.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'your ga id', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>
